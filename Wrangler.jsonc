@@ -1,0 +1,22 @@
+{
+  "name": "black-click",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-13",
+  "assets": {
+    "directory": "."
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "GAME",
+        "class_name": "GameRoom"
+      }
+    ]
+  },
+  "exports": {
+    "GameRoom": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  }
+}
